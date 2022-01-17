@@ -10,7 +10,6 @@ import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Arrays;
 import java.util.Collections;
 
 @Service
@@ -47,7 +46,6 @@ public class ExternalServiceImpl implements ExternalService {
             response.setStatus(StatusEnum.STATUS_SUCCESSFULL.create());
 
         } catch (Exception e) {
-            System.out.println(e);
             response.setStatus(StatusEnum.STATUS_FAIL.create());
         }
 
